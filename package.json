@@ -1,0 +1,44 @@
+{
+  "name": "template-automation",
+  "version": "1.0.0",
+  "description": "Script pré-configurado que podem ser editados",
+  "author": "Rafael Torres <rafael.santos@ltmfidelidade.com.br>",
+  "scripts": {
+    "db-portal": "node bin/database-portal",
+    "remove-report": "if exist allure-report rmdir allure-report /s /q",
+    "pretest": "webdriver-manager update && npm run remove-report",
+    "smokeTest:Chrome": "protractor chrome.conf.js",
+    "smokeTest:Firefox": "protractor firefox.conf.js",
+    "smokeTest:Mobile": "protractor mobile.conf.js",
+    "smokeTest:Multi": "protractor multiCapabilities.conf.js",
+    "posttest": "allure generate allure-report --clean -o allure-report || true",
+    "report": "allure serve"
+  },
+  "keywords": [
+    "protractor",
+    "protractor-helper",
+    "e2e"
+  ],
+  "dependencies": {
+    "axe-cli": "^3.2.0",
+    "axe-webdriverjs": "^2.3.0",
+    "chai": "^4.2.0",
+    "chromedriver": "^80.0.1",
+    "expect.js": "^0.3.1",
+    "geckodriver": "^1.19.1",
+    "jasminewd2": "^2.2.0",
+    "mail-listener2": "^0.3.1",
+    "mssql": "^6.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.13.0",
+    "jasmine": "^3.5.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.2",
+    "protractor-helper": "^4.0.12",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "selenium-server-standalone-jar": "^3.141.59"
+  }
+}

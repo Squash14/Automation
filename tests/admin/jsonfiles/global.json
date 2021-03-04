@@ -1,0 +1,26 @@
+{
+    "url": {
+        "zendesk": "https://atendimentoiupp.zendesk.com/hc/pt-br/requests/new?ticket_form_id=360000455711",
+        "semprepresente": "https://semprepresente-qa2.webpremios.digital/"
+    },
+    "creadentials": {
+        "userPSP": "54177715034",
+        "userNPSP": "59583722030",
+        "userLegacy": "90742519007",
+        "userUnlock": "32336266067",
+        "userChange": "13831092060",
+        "userFirstAccess": "22393878076",
+        "pass": "Ltm@2020",
+        "password": "ysMm#h-3",
+        "fullName": "Guilherme Igor Bento Cardoso",
+        "cellPhone": "61982935040",
+        "passwordFirstAccess": "Danyl@354986",
+        "emailGmail": "squashegisa2",
+        "passwordGmail": "Gis@354986"
+    },
+    "personal": {
+        "name": "Isabela Allana",
+        "cell": "(61) 98222-9350",
+        "emailAddress": "rafael.santos@ltmfidelidade.com.br"
+    }
+}
